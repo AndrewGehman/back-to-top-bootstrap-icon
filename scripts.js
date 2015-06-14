@@ -5,12 +5,12 @@ $( document ).ready(function() {
   			
 			
 		    var offset = 600; // sets distance in pixels when back to top will appear 
-			var duration = 400;  // fade in duration 
+			var fadeintime = 400;  // fade in duration 
 			$(window).scroll(function() {
 				if ($(this).scrollTop() > offset) {
-					$('.back-to-top').fadeIn(duration);
+					$('.back-to-top').fadeIn(fadeintime);
 				} else {
-					$('.back-to-top').fadeOut(duration);
+					$('.back-to-top').fadeOut(fadeintime);
 				}
 			});
 			
